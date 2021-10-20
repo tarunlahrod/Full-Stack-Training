@@ -27,5 +27,11 @@
         <constructor-arg value="10" type="int" index="1"/>
         <constructor-arg value="20" type="int" index="0"/>
     </bean>
+    
+    <bean class="org.example.Employee" name="employee1" init-method="init" destroy-method="destroy">
+        <property name="empId" value="106"/>
+        <property name="name" value="Jiraya"/>
+        <property name="email" value="jiraya.sanin@gmail.com"/>
+    </bean>
 
 </beans>
