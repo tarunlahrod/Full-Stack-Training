@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.example.Student" name="student1">
+        <constructor-arg value="1"/>
+        <constructor-arg value="Naruto"/>
+        <constructor-arg value="naruto.uzumaki@gmail.com"/>
+    </bean>
+
+    <bean class="org.example.Address" name="address1">
+        <constructor-arg value="1"/>
+        <constructor-arg value="420"/>
+        <constructor-arg value="Konoha"/>
+    </bean>
+
+    <bean class="org.example.Customer" name="customer1">
+        <constructor-arg value="101"/>
+        <constructor-arg value="Sasuke Uchiha"/>
+        <constructor-arg ref="address1"/>
+    </bean>
+
+    <bean class="org.example.Calculator" name="calculator1">
+        <constructor-arg value="10" type="int" index="1"/>
+        <constructor-arg value="20" type="int" index="0"/>
+    </bean>
+
+</beans>
